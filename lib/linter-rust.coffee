@@ -13,7 +13,7 @@ class LinterRust extends Linter
   executablePath: null
   linterName: 'rust'
   errorStream: 'stderr'
-  regex: '^(.+):(?<line>\\d+):(?<col>\\d+):\\s*(\\d+):(\\d+)\\s+((?<error>error|fatal error)|(?<warning>warning)):\\s+(?<message>.+)\n'
+  regex: '(.+):(?<line>\\d+):(?<col>\\d+):\\s*(\\d+):(\\d+)\\s+((?<error>error|fatal error)|(?<warning>warning)):\\s+(?<message>.+)\n'
 
   constructor: (@editor) ->
     super @editor
